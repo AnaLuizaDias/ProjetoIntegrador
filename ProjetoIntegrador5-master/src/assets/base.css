@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 10% auto 5%;
+  grid-template-areas: 
+    "header header"
+    "sidenav content"
+    "sidenav footer";
+}
+
+/* #header, #content, #sidenav, #footer {
+  border: 1px solid black
+} */
+
+#header {
+  grid-area: header;
+  background-color: #CDF0EA;
+  display: flex;
+  font-size: 25px;
+  height: 100px;
+}
+a {
+  color: #8763d5;
+  text-decoration: underline;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFFF
+}
+#footer {
+  grid-area: footer;
+  background-color: #CDF0EA;
+  color: #8763d5;
+}
+#sidenav {
+  color: black;
+  grid-area: sidenav;
+  background-color: #d2c5ef;
+}
+
+.block{
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #CDF0EA;
+  ;
+}
+.margin{
+  margin: 50px;
+}
+.img-cards{
+  width:425px;
+  height:180px;
+}
+.imglogo{
+  margin: 20px;
+}
+.img-carrossel{
+  width: 1000px;
+  height: 500px;
+  margin-top:24px;
+}
+.div-home{
+  width: 30%;
+  margin: 20px;
+}
+.img-home{
+  width: 180px;
+  height: 180px;
+}
